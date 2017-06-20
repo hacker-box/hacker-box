@@ -1,0 +1,24 @@
+@import "react-toolbox/lib/colors.css";
+@import "react-toolbox/lib/variables.css";
+
+.terminal {
+  color: var(--color-white);
+  overflow-y: auto;
+  width: 100%;
+  transition-timing-function: var(--animation-curve-fast-out-slow-in);
+  transition-duration: .3s;
+}
+
+.inputElement {
+  color: var(--color-white);
+}
+
+.logerror {
+  color: var(--palette-red-300);
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

@@ -1,0 +1,18 @@
+@import "react-toolbox/lib/colors.css";
+@import "react-toolbox/lib/variables.css";
+
+.editor {
+  font-family: Menlo, Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+  padding: calc(1 * var(--unit));
+  min-height: calc(5 * var(--unit));
+}
+
+.placeholder {
+  font-family: 'Roboto', 'Helvetica', 'Arial';
+  font-size: var(--font-size-small);
+  color: var(--color-text-secondary);
+}
+
+.actionIcons {
+  display: flex;
+}

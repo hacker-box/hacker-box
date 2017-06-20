@@ -1,0 +1,6 @@
+@import "react-toolbox/lib/colors.css";
+@import "react-toolbox/lib/variables.css";
+
+.spinner {
+  margin-top: 65px;
+}

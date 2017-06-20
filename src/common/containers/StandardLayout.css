@@ -1,0 +1,17 @@
+@import "react-toolbox/lib/variables.css";
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.circular {
+  z-index: var(--z-index-highest);
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+  margin-left: -32px;
+}

@@ -1,0 +1,52 @@
+@import "react-toolbox/lib/colors.css";
+@import "react-toolbox/lib/variables.css";
+
+.active {
+  box-shadow: var(--shadow-4p);
+  margin: 0;
+  left: 50%;
+  right: initial;
+  width: calc(60 * var(--unit));
+  margin-left: calc(-30 * var(--unit));
+}
+
+.snackbar {
+  padding: 0;
+}
+
+.cmdbar {
+  overflow-y: auto;
+  max-height: calc(2 * var(--unit));
+  transition-timing-function: var(--animation-curve-fast-out-slow-in);
+  transition-duration: .3s;
+  padding: var(--unit);
+  width: calc(60 * var(--unit));
+}
+
+.status {
+  padding-left: calc(0.5 * var(--unit));
+}
+
+.maxHeight {
+  max-height: calc(50 * var(--unit));
+}
+
+.connected {
+  display: flex;
+  justify-content: space-between;
+  color: var(--palette-green-500);
+  border-bottom: 1px solid var(--palette-cyan-500);
+  align-items: baseline;
+}
+
+.disconnected {
+  display: flex;
+  justify-content: space-between;
+  color: var(--palette-red-300);
+  border-bottom: 1px solid var(--palette-cyan-900);
+  align-items: baseline;
+}
+
+.note {
+  font-size: var(--font-size-small)
+}

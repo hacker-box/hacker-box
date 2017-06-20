@@ -1,0 +1,31 @@
+@import "react-toolbox/lib/colors.css";
+@import "react-toolbox/lib/variables.css";
+
+.file {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-divider)
+}
+
+.path {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  padding: calc(0.5 * var(--unit)) calc(var(--unit));
+}
+
+.card {
+  display: flex;
+  width: calc(var(--unit) * 25);
+  margin: var(--unit);
+}
+
+.actionIcons {
+  display: flex;
+}

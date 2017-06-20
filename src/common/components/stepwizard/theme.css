@@ -1,0 +1,67 @@
+@import "react-toolbox/lib/colors.css";
+@import "react-toolbox/lib/variables.css";
+
+.avatar {
+  width: calc(var(--unit) * 3);
+  height: calc(var(--unit) * 3);
+  font-size: var(--font-size-normal);
+  margin-right: calc(var(--unit) * 1);
+  padding-top: calc(var(--unit) * 0.3);
+  
+  & .letter {
+    line-height: calc(2.4 * var(--unit));
+  }
+}
+
+.active {
+  background-color: var(--color-accent);
+}
+
+.step {
+  padding: 0 calc(var(--unit) * 2)
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  padding: var(--unit) 0;
+}
+
+.subtle {
+  color: var(--color-text-secondary);
+}
+
+.subtext {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  padding: calc(var(--unit) 0);
+}
+
+.body {
+  border-left: 1px solid var(--color-divider);
+  padding: 0 calc(var(--unit) * 2);
+  margin-left: calc(var(--unit) * 1.2);
+  transition-timing-function: var(--animation-curve-default);
+  transition-duration: .3s;
+}
+
+.hideBody {
+  height: 0;
+  padding: 0 calc(var(--unit) * 2);
+}
+
+.action {
+  padding-top: calc(var(--unit) * 2);
+}
+
+.actionBtn {
+  margin-right: calc(var(--unit) * 2);
+}
+
+.middleAlign {
+  align-items: center;
+}
+
+.iconFix {
+  line-height: 1.7em;
+}

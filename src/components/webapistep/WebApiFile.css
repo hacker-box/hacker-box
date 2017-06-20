@@ -1,0 +1,29 @@
+@import "react-toolbox/lib/colors.css";
+@import "react-toolbox/lib/variables.css";
+
+.serverAction {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  padding: calc(0.5 * var(--unit)) calc(var(--unit)) 0;
+  background-color: var(--palette-yellow-50);
+}
+
+.paste {
+  border: 1px dashed var(--color-divider);
+}
+
+.actions {
+  margin-top: -10px;
+}
+
+.itemContentRoot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.url {
+  color: var(--color-text-secondary);
+  padding-left: var(--unit);
+}

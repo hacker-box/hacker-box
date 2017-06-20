@@ -1,0 +1,6 @@
+@import "react-toolbox/lib/colors.css";
+@import "react-toolbox/lib/variables.css";
+
+.editorWrapper {
+  padding: calc(1 * var(--unit)) 0;
+}

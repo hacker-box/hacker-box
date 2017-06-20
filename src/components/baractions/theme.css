@@ -1,0 +1,11 @@
+@import "react-toolbox/lib/colors.css";
+@import "react-toolbox/lib/variables.css";
+
+.follow {
+  display: flex;
+  align-items: center;
+}
+
+.ftext {
+  padding: 0 5px;
+}

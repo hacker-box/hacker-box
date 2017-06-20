@@ -1,0 +1,13 @@
+@import "react-toolbox/lib/colors.css";
+@import "react-toolbox/lib/variables.css";
+
+.avatar {
+  width: calc(2 * var(--unit));
+  height: calc(2 * var(--unit));
+  font-size: var(--font-size-tiny);
+  background-color: var(--palette-red-400)
+}
+
+.letter {
+  line-height: calc(2 * var(--unit));
+}

@@ -1,0 +1,13 @@
+@import "react-toolbox/lib/colors.css";
+@import "react-toolbox/lib/variables.css";
+
+.files {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add {
+  width: calc(var(--unit) * 25);
+  margin: var(--unit);
+  order: 0;
+}

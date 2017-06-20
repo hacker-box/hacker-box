@@ -1,0 +1,34 @@
+@import "react-toolbox/lib/colors.css";
+@import "react-toolbox/lib/variables.css";
+
+.button {
+  align-self: baseline;
+}
+
+.layout {
+  margin-bottom: calc(var(--unit) * 500)
+}
+
+.draws {
+  top: 65px;
+}
+
+.rightDraw {
+  top: 65px;
+  overflow: visible;
+  width: 100vw;
+}
+
+.arrow {
+  position: absolute;
+  top: calc(50vh - (2 * var(--unit)));
+  left: calc(-2 * var(--unit));
+}
+
+.right30 {
+  transform: translateX(30vw) !important;
+}
+
+.right90 {
+  transform: translateX(90vw) !important;
+}

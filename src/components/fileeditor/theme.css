@@ -1,0 +1,102 @@
+@import "react-toolbox/lib/colors.css";
+@import "react-toolbox/lib/variables.css";
+
+.container {
+  display: flex;
+}
+
+.left {
+  width: 50vw;
+  position: relative;
+  min-height: 90vh;
+}
+
+.right {
+  width: 50vw;
+  min-height: 90vh;
+}
+
+.editor {
+  height: 100%;
+  /*
+  width: 100%;
+  font-family: Menlo, Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+  font-size: var(--font-size-small);
+  min-height: calc(5 * var(--unit));
+  padding: calc(1 * var(--unit));
+  background-color: #fdf6e3;
+  background-color: var(--palette-grey-100);
+  */
+}
+
+.pre {
+  margin: 0 !important;
+  height: 100%;
+  box-shadow: none !important;
+  &::before {
+    box-shadow: none !important;
+  }
+  &::after {
+    box-shadow: none !important;
+  }
+}
+
+.placeholder {
+  font-family: 'Roboto', 'Helvetica', 'Arial';
+  font-size: var(--font-size-small);
+  color: var(--color-text-secondary);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  border-left: 10px solid #358ccb;
+  border-bottom: 1px solid #358ccb;
+}
+
+.label {
+  padding: var(--unit);
+  text-transform: uppercase;
+}
+
+.actionBtns {
+  display: flex;
+}
+
+.menuWrapper {
+  position: relative;
+}
+
+.menu {
+  margin-top: calc(3.6 * var(--unit));
+}
+
+.curly {
+  /* background-color: rgba(69,142,209,.04); */
+  border-bottom: 1px solid var(--palette-teal-300);
+}
+
+.syntax {
+  background-color: var(--palette-red-a200);
+  color: var(--color-dark-contrast);
+}
+
+.shotcut {
+  position: fixed;
+  bottom: var(--unit);
+  right: 50vw;
+  background-color: #fdf6e3;
+  font-size: var(--font-size-small);
+  border: 1px solid var(--palette-amber-200);
+}
+
+.header {
+  background-color: var(--palette-amber-200);
+  padding-left: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+}

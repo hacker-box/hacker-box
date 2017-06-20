@@ -1,0 +1,41 @@
+@import "react-toolbox/lib/colors.css";
+@import "react-toolbox/lib/variables.css";
+
+.browser {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background)
+}
+
+.start {
+  display: flex;
+  flex: 1;
+  padding: var(--unit);
+}
+
+.frame {
+  display: flex;
+  flex: 1
+}
+
+.url {
+  padding: 0 calc(var(--unit));
+  width: 100%;
+}
+
+.bar {
+  display: flex;
+}
+
+.frameContent {
+  display: flex;
+  height: 100%;
+}
+
+.state {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
