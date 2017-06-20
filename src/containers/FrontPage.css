@@ -8,6 +8,12 @@
   width: 250px;
 }
 
+@media (max-width: 750px) {
+  .logo {
+    display: none;
+  }
+}
+
 .deck {
   width: 100%;
   height: 100%;
@@ -87,7 +93,11 @@
   text-align: center;
   padding: 0 10px;
 }
-
+.dtext {
+  background-color: #f4ae01;
+  color: #ffffff;
+  text-align: center;
+}
 .down {
   position: absolute;
   bottom: 20px;

@@ -2,7 +2,7 @@ const React = require("react");
 const theme = require("./FrontPage.css");
 const hboxImg = require("../images/hbox.jpg");
 const { default: Deck } = require("react-slide-deck");
-const { Button } = require("react-toolbox");
+const { Button, IconButton } = require("react-toolbox");
 const { Link } = require("react-router-dom");
 
 const { dataMl, codeMl } = require("./DataMl");
@@ -67,7 +67,13 @@ class FrontPage extends React.Component {
                 </div>
               </div>
             </div>
-            <i className={`${theme.down} material-icons`}>arrow_downward</i>
+            <IconButton
+              className={theme.down}
+              inverse
+              ripple
+              icon="arrow_downward"
+              onClick={() => this.setState({ current: 1 })}
+            />
           </Deck.Slide>
           <Deck.Slide className={theme.slide}>
             <div className={theme.center}>
@@ -86,10 +92,13 @@ class FrontPage extends React.Component {
                 <div className={theme.text}>
                   But what if you could somehow extract a JSON representation of your code?
                 </div>
-                <div className={theme.text}>
-                  <i className={`material-icons`}>
-                    arrow_downward
-                  </i>
+                <div className={theme.dtext}>
+                  <IconButton
+                    ripple
+                    inverse
+                    icon="arrow_downward"
+                    onClick={() => this.setState({ current: 2 })}
+                  />
                 </div>
               </div>
             </div>
@@ -120,10 +129,13 @@ class FrontPage extends React.Component {
                     Changes to JSON only patches the code, while retaining other changes.
                   </div>
                 </div>
-                <div className={theme.text}>
-                  <i className={`material-icons`}>
-                    arrow_downward
-                  </i>
+                <div className={theme.dtext}>
+                  <IconButton
+                    ripple
+                    inverse
+                    icon="arrow_downward"
+                    onClick={() => this.setState({ current: 3 })}
+                  />
                 </div>
               </div>
             </div>
@@ -163,10 +175,13 @@ class FrontPage extends React.Component {
                 <div className={theme.text}>
                   Now you can stretch your imagination on what you can automate. Even across files.
                 </div>
-                <div className={theme.text}>
-                  <i className={`material-icons`}>
-                    arrow_downward
-                  </i>
+                <div className={theme.dtext}>
+                  <IconButton
+                    ripple
+                    inverse
+                    icon="arrow_downward"
+                    onClick={() => this.setState({ current: 4 })}
+                  />
                 </div>
               </div>
             </div>
@@ -203,10 +218,13 @@ class FrontPage extends React.Component {
                     or see the selectors (reselect) output right after you code.
                   </div>
                 </div>
-                <div className={theme.text}>
-                  <i className={`material-icons`}>
-                    arrow_downward
-                  </i>
+                <div className={theme.dtext}>
+                  <IconButton
+                    ripple
+                    inverse
+                    icon="arrow_downward"
+                    onClick={() => this.setState({ current: 5 })}
+                  />
                 </div>
               </div>
             </div>
