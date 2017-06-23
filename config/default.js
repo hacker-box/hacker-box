@@ -13,7 +13,8 @@ const contentSecurityPolicy = {
   scriptSrc: [
     cspSelf,
     "https://*.firebaseio.com",
-    "https://platform.twitter.com/"
+    "https://platform.twitter.com/",
+    "https://www.google-analytics.com"
   ]
     .concat(!isProduction && `http://localhost:${DEV_SERVER_PORT}`)
     .concat(!isProduction && "'unsafe-eval'")
@@ -47,7 +48,12 @@ const contentSecurityPolicy = {
 
   mediaSrc: [cspSelf],
 
-  imgSrc: [cspSelf, "*.amazonaws.com", "https://*.twitter.com/"]
+  imgSrc: [
+    cspSelf,
+    "*.amazonaws.com",
+    "https://*.twitter.com/",
+    "https://www.google-analytics.com"
+  ]
     .concat(!isProduction && `http://localhost:${DEV_SERVER_PORT}`)
     .filter(Boolean)
 };

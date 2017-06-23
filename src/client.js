@@ -84,3 +84,14 @@ window.twttr = (function(d, s, id) {
 
   return t;
 })(document, "script", "twitter-wjs");
+
+// ga
+(function() {
+  window.ga = window.ga ||
+    function() {
+      (window.ga.q = window.ga.q || []).push(arguments);
+    };
+  window.ga.l = new Date().getTime();
+  window.ga("create", "UA-101527912-1", "auto");
+  window.ga("send", "pageview");
+})();

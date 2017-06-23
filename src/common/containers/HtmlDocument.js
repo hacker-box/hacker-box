@@ -39,6 +39,7 @@ const HtmlDocument = props => {
           id="firebase-config"
           dangerouslySetInnerHTML={{ __html: serialize(firebase) }}
         />
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
       </body>
     </html>
   );

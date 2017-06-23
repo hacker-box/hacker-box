@@ -6,7 +6,8 @@ const {
   CardActions,
   Button,
   AppBar,
-  NavDrawer
+  NavDrawer,
+  FontIcon
 } = require("react-toolbox");
 const theme = require("./UserHome.css");
 const { connect } = require("react-redux");
@@ -50,7 +51,7 @@ class UserHome extends React.Component {
     const { apps, user } = this.props;
     const { showNav } = this.state;
     return (
-      <div>
+      <div className={theme.userHome}>
         <NavDrawer fixed active={showNav} onOverlayClick={this.handleToggle} />
         <AppBar
           onLeftIconClick={this.handleToggle}
@@ -73,6 +74,29 @@ class UserHome extends React.Component {
         />
         <div className={theme.appWrapper}>
           {apps.map((app, idx) => <AppCard key={idx} app={app} />)}
+        </div>
+        <div className={theme.intro}>
+          <div>
+            <div>
+              This web playground is a proof of concept to expore the ability
+              to automate by extracting and patching JSON to/from code for specific frameworks.
+              Start by adding an app and try editing the files. Changing JSON should update code
+              and visa versa.
+            </div>
+            <h4>What is coming next:</h4>
+            <div>
+              An Atom Package implementing this concept. Everytime you edit a file, An event with JSON payload
+              detailing the diff will be received allowing the developers to modify
+              related code across files. The plugins for each framework will translate JSON
+              {" "}
+              <FontIcon className={theme.ticon} value="compare_arrows" />
+              {" "}
+              CODE
+              <br /><br />
+              Think of it as an IFTTT style automation for code. Follow @HackerHyperBox
+              on Twitter for updates.
+            </div>
+          </div>
         </div>
       </div>
     );
