@@ -5647,9 +5647,9 @@ react-router@^4.0.0:
     path-to-regexp "^1.5.3"
     warning "^3.0.0"
 
-react-slide-deck@^0.2.3:
+"react-slide-deck@git+https://git@github.com/vidoss/react-slide-deck.git":
   version "0.2.3"
-  resolved "https://registry.yarnpkg.com/react-slide-deck/-/react-slide-deck-0.2.3.tgz#f3c127d76a14edb9913f35adcf08b7c330bbce71"
+  resolved "git+https://git@github.com/vidoss/react-slide-deck.git#1e7cd1fea5a34b234e010a2e2066f055e10962df"
 
 react-style-proptype@^2.0.0:
   version "2.0.2"
