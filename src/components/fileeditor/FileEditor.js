@@ -240,7 +240,7 @@ class FileEditor extends React.Component {
               key={idx}
               value={noti}
               caption={`${noti.caption} (${altMod} ${idx})`}
-              onClick={e => this.handleNotificationClick(noti, e)}
+              onClick={e => this.handleNotificationClick(e, noti)}
             />
           ))}
         </Menu>

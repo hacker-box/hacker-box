@@ -17,7 +17,7 @@ const contentSecurityPolicy = {
     "https://www.google-analytics.com"
   ]
     .concat(!isProduction && `http://localhost:${DEV_SERVER_PORT}`)
-    .concat(!isProduction && "'unsafe-eval'")
+    .concat("'unsafe-eval'")
     .filter(Boolean),
 
   connectSrc: [cspSelf, "https://*.googleapis.com", "wss://*.firebaseio.com"]
@@ -29,7 +29,8 @@ const contentSecurityPolicy = {
     cspSelf,
     "http://localhost:*",
     "https://*.firebaseio.com",
-    "http://platform.twitter.com"
+    "http://platform.twitter.com",
+    "https://www.youtube.com"
   ],
 
   styleSrc: [

@@ -82,12 +82,16 @@ class UserHome extends React.Component {
               to automate by extracting and patching JSON to/from code for specific frameworks.
               Start by adding an app and try editing the files. Changing JSON should update code
               and visa versa.
+              {" "}
+              <Link to="/intro/video">See a quick screencast</Link>
             </div>
-            <h4>What is coming next:</h4>
+            <h4>What is coming next?</h4>
             <div>
-              An Atom Package implementing this concept. Everytime you edit a file, An event with JSON payload
-              detailing the diff will be received allowing the developers to modify
-              related code across files. The plugins for each framework will translate JSON
+              An Atom Package implementing these concepts. Everytime you edit a file, An event with JSON payload
+              containing the diff will be received allowing the developers to modify
+              related code across files. Modifying code is as simple as manipulating the JSON.
+              {" "}
+              The plugins for each framework will do the hard work of translating between JSON
               {" "}
               <FontIcon className={theme.ticon} value="compare_arrows" />
               {" "}

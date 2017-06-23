@@ -4,3 +4,11 @@
 .spinner {
   margin-top: 65px;
 }
+
+.video {
+  margin: 100px auto;
+}
+
+.intro {
+  display: flex;
+}

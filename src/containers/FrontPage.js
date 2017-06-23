@@ -81,12 +81,15 @@ class FrontPage extends React.Component {
                 <div className={theme.text}>
                   But automating coding workflow is hard!
                 </div>
+                <div className={theme.text}>
+                  Lets say you want to add a WebAPI everytime you add an ACTION.
+                </div>
                 <div className={theme.para}>
                   <div className={theme.line}>
-                    Lets say you want to add a WebAPI everytime you add an ACTION.
+                    You might do some regex parsing to add the automation.
                   </div>
                   <div className={theme.line}>
-                    You look at the code and feel lost.
+                    But regex are hard and there are always corner cases that will fail.
                   </div>
                 </div>
                 <div className={theme.text}>
@@ -111,6 +114,7 @@ class FrontPage extends React.Component {
                 </div>
                 <div className={theme.text}>
                   What if adding an entry to JSON automatically adds code?
+                  Or any edits to JSON changes the code.
                 </div>
                 <div className={theme.para}>
 
@@ -164,7 +168,7 @@ class FrontPage extends React.Component {
                 </div>
                 <div className={theme.para}>
                   <div className={theme.line}>
-                    Now automation just got a lot more simpler.
+                    Now automation just got a lot more easier.
                   </div>
                   <div className={theme.line}>
                     Dealing with JSON is easy for frontend developers. That
@@ -186,6 +190,7 @@ class FrontPage extends React.Component {
               </div>
             </div>
           </Deck.Slide>
+          {/*
           <Deck.Slide className={theme.yellow}>
             <div className={theme.center}>
               <div className={theme.para}>
@@ -229,6 +234,7 @@ class FrontPage extends React.Component {
               </div>
             </div>
           </Deck.Slide>
+          */}
           <Deck.Slide className={`${theme.slide} ${theme.slide1}`}>
             <img className={theme.logo} src={hboxImg} alt="hacker-box" />
             <div className={theme.center}>
@@ -239,7 +245,7 @@ class FrontPage extends React.Component {
                 <div className={theme.center}>
                   <div className={theme.para}>
                     <div className={theme.text}>
-                      Try the web playgroud to explore this concept further.
+                      Try the web playgroud to explore these concepts further.
                     </div>
                     <div className={theme.text}>
                       <Button

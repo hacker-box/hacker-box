@@ -22,6 +22,27 @@ const Spinner = props => {
   );
 };
 
+const IntroVideo = props => {
+  return (
+    <div className={theme.intro}>
+      <AppBar
+        fixed
+        title="Home"
+        leftIcon="arrow_back"
+        onLeftIconClick={() => props.history.goBack()}
+      />
+      <iframe
+        className={theme.video}
+        width="1280"
+        height="720"
+        src="https://www.youtube.com/embed/TvFeTzmZY50"
+        frameBorder="0"
+        allowFullScreen
+      />
+    </div>
+  );
+};
+
 const AppMain = props => {
   const { user, location } = props;
   return (
@@ -42,6 +63,7 @@ const AppMain = props => {
         <Route path="/user/:userId" component={user && UserHome} />
         <Route path="/app/:appId" component={user && AppBuilder} />
         <Route path="/file/:fileId" component={user && FileContainer} />
+        <Route path="/intro/video" component={IntroVideo} />
       </Switch>
     </StandardLayout>
   );
