@@ -86,7 +86,7 @@ class FrontPage extends React.Component {
                 </div>
                 <div className={theme.para}>
                   <div className={theme.line}>
-                    You might do some regex parsing to add the automation.
+                    You might write a script with some regex parsing to achive this automation.
                   </div>
                   <div className={theme.line}>
                     But regex are hard and there are always corner cases that will fail.
@@ -114,7 +114,7 @@ class FrontPage extends React.Component {
                 </div>
                 <div className={theme.text}>
                   What if adding an entry to JSON automatically adds code?
-                  Or any edits to JSON changes the code.
+                  Or any edits to JSON automatically changes the code.
                 </div>
                 <div className={theme.para}>
 
@@ -190,7 +190,6 @@ class FrontPage extends React.Component {
               </div>
             </div>
           </Deck.Slide>
-          {/*
           <Deck.Slide className={theme.yellow}>
             <div className={theme.center}>
               <div className={theme.para}>
@@ -234,7 +233,6 @@ class FrontPage extends React.Component {
               </div>
             </div>
           </Deck.Slide>
-          */}
           <Deck.Slide className={`${theme.slide} ${theme.slide1}`}>
             <img className={theme.logo} src={hboxImg} alt="hacker-box" />
             <div className={theme.center}>
@@ -245,7 +243,7 @@ class FrontPage extends React.Component {
                 <div className={theme.center}>
                   <div className={theme.para}>
                     <div className={theme.text}>
-                      Try the web playgroud to explore these concepts further.
+                      Try the web playground to explore these concepts further.
                     </div>
                     <div className={theme.text}>
                       <Button

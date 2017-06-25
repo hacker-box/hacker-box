@@ -49,6 +49,17 @@ class BarActions extends React.Component {
 
     return (
       <Navigation type="horizontal">
+        <Link
+          className={theme.link}
+          href="https://linkedin.com/in/victor-doss-40aa02"
+          label="Author"
+          icon="person"
+        />
+        <Link
+          className={theme.link}
+          href="https://github.com/hacker-box/hacker-box"
+          label="GitHub"
+        />
         <Button
           label="Atom Package"
           primary
